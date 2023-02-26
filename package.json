@@ -1,0 +1,26 @@
+{
+  "name": "template",
+  "version": "1.0.0",
+  "description": "1. Создайте свой репозиторий для верстки данного макета\r 2. Склонируйте текущий репозиторий\r 3. Удалите файл README.md и переименуйте файл README.tmp в README.md\r 4. Выполните Commit всех своих изменений и сделайте Push в свой репозиторий\r 5. Включите **GitHub Pages**\r 6. Отправьте ссылку боту на **GitHub репозиторий**\r 7. Готово",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dmitrij413/Real_Estate.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dmitrij413/Real_Estate/issues"
+  },
+  "homepage": "https://github.com/Dmitrij413/Real_Estate#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify-es": "^3.0.0",
+    "sass": "^1.60.0"
+  }
+}
