@@ -7,7 +7,7 @@ const uglify = require('gulp-uglify-es').default;
 function styles() {
     return src('app/scss/style.scss')
         .pipe(concat('style.min.css'))
-        .pipe(scss({ outputStyle: 'compressed'}))
+        .pipe(scss({outputStyle: 'compressed'}))
         .pipe(dest('app/css'))
 }
 
