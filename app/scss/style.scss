@@ -70,13 +70,38 @@ $grey: #8E8E8E;
     letter-spacing: 0.5px;
     color: #73788C;
   }
+  button{
+    padding: 16px 48px;
+    font-family: 'Poppins', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.0025em;
+    border: none;
+    cursor: pointer;
+  }
+  .btn__white{
+    color: $green;
+    background: transparent;
+    margin-right: 8px;
+    &:hover{
+      color: #ffffff;
+      background-color: $green;
+      transition: all 1s ease;
+    }
+  }
+  .btn__green{
+    color: #ffffff;
+    background-color: $green;
+  }
   header{
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 32px 125px 0;
   }
-  ul{
+  ul {
     display: flex;
     justify-content: space-between;
     list-style-type: none;
@@ -90,26 +115,29 @@ $grey: #8E8E8E;
     flex: none;
     order: 1;
     flex-grow: 0;
-    a{
+    a {
       text-decoration: none;
       color: $grey;
     }
+  }
+}
   .logo{
     display: flex;
     align-items: center;
-    font-family: 'Poppins', serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 26px;
-    letter-spacing: 0.5px;
-    color: $green;
+    span{
+      font-family: 'Poppins', serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 26px;
+      letter-spacing: 0.5px;
+      color: $green;
+    }
     img{
       margin-right: 8px;
     }
   }
-}
 nav{
   width: 535px;
+  margin-left: 216px;
   }
-}
