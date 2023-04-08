@@ -95,31 +95,57 @@ $grey: #8E8E8E;
     color: #ffffff;
     background-color: $green;
   }
-  header{
-    display: flex;
+  .section-name{
+    display: inline-block;
+    background: #F8F9FE;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    margin: 32px 125px 0;
-  }
-  ul {
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
+    padding: 12px 24px;
+    gap: 10px;
+    font-family: 'Poppins', serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 26px;
     letter-spacing: 0.5px;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-    a {
-      text-decoration: none;
-      color: $grey;
+    color: $green;
+  }
+
+  header{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 32px 125px 0;
+    position: relative;
+    a{
+      &:hover{
+        color: $green;
+        position: relative;
+        bottom: 10px;
+      }
+    }
+    ul {
+      display: flex;
+      justify-content: space-between;
+      list-style-type: none;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 26px;
+      letter-spacing: 0.5px;
+      flex: none;
+      order: 1;
+      flex-grow: 0;
+      a {
+        text-decoration: none;
+        color: $grey;
+      }
     }
   }
+
 }
   .logo{
     display: flex;
