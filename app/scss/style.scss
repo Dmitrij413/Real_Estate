@@ -8,6 +8,7 @@ $lightgrey: #A6A6A6;
 $bg-white: #FEFEFF;
 $border: #DEDCDA;
 $title: #1f2744;
+$subtitle: #054457;
 $bg-main: #F5F5F5;
 
 
@@ -31,7 +32,7 @@ $bg-main: #F5F5F5;
     font-size: 48px;
     line-height: 56px;
     letter-spacing: 0.5px;
-    color: #054457;
+    color: $subtitle;
     margin: 16px 0;
   }
   h3{
@@ -41,7 +42,7 @@ $bg-main: #F5F5F5;
     font-size: 28px;
     line-height: 38px;
     letter-spacing: 0.5px;
-    color: #054457;
+    color: $subtitle;
   }
   h4{
     font-family: 'Poppins', serif;
@@ -54,13 +55,11 @@ $bg-main: #F5F5F5;
     margin: 16px 0 8px;
   }
   h5{
-    font-family: 'Poppins', serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 72px;
-    line-height: 80px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: $title;
     letter-spacing: 0.0025em;
-    color: #054457;
   }
   h6{
     font-family: 'Poppins', serif;
@@ -69,7 +68,8 @@ $bg-main: #F5F5F5;
     font-size: 48px;
     line-height: 58px;
     letter-spacing: 0.0025em;
-    color: #054457;
+    color: $subtitle;
+    margin: 0;
   }
   p{
     font-family: 'Poppins', serif;
@@ -341,13 +341,114 @@ $bg-main: #F5F5F5;
     padding-top: 216px;
     display: flex;
     .about_left{
-      width: 50%;
+      width: 52%;
+      height: 475px;
+      background-image: url(../img/bg-about.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: relative;
       .about_left__grade{
-
+        width: 174px;
+        height: 236px;
+        box-shadow: 35px 35px 65px rgba(146, 106, 120, 0.16);
+        background-color: $bg-white;
+        position: relative;
+        bottom: 80px;
+        left: 96px;
+        .tick-square{
+          position: relative;
+          bottom: 49px;
+          left: 43%;
+        }
+        span{
+          font-weight: 400;
+          font-size: 72px;
+          line-height: 80px;
+          letter-spacing: 0.0025em;
+          color: $subtitle;
+          position: relative;
+          top: 25px;
+        }
+        .stars{
+          display: flex;
+          flex-wrap: nowrap;
+          justify-content: space-between;
+          margin: 0 35px;
+          position: relative;
+          top: 30px;
+          img{
+            width: 15px;
+            height: 15px;
+          }
+        }
+        .grade-reviews{
+          color: $lightgrey;
+          position: relative;
+          top: 40px;
+          text-align: center;
+          .reviews-span{
+            line-height: 4px;
+            letter-spacing: 0.0025em;
+            color: $subtitle;
+          }
+        }
+      }
+      .about_left__count{
+        display: flex;
+        justify-content: space-around;
+        width: 520px;
+        background-color: $bg-white;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        .about_sale{
+          display: flex;
+          align-items: center;
+        }
       }
     }
     .about_right{
-      width: 50%;
+      margin-left: 56px;
+      width: 45%;
+      .section-name{
+        margin-top: 25px;
+      }
+      .btn__green{
+        margin-top: 48px;
+      }
+    }
+  }
+  .testimonials{
+    background-color: $bg-white;
+    .section-name{
+      margin-top: 120px;
+    }
+    .testimonials_items{
+      margin-top: 48px;
+      padding-bottom: 120px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr;
+      grid-column-gap: 32px;
+      .testimonials_items__item {
+        padding: 24px;
+        border: 1px solid $border;
+        p{
+          color: $title;
+        }
+        .testimonials_item__author{
+          display: flex;
+          .author_info{
+            margin-left: 14px;
+            .author_name{
+              color: #0B2E29;
+            }
+            .author_profession{
+              color: #767676;
+            }
+          }
+        }
+      }
     }
   }
 }
