@@ -1,12 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Rubik:wght@600&display=swap');
 
 
+$ghost-white: #F8F9FE;
 $green: #4BA586;
 $grey: #8E8E8E;
+$lightgrey: #A6A6A6;
+$bg-white: #FEFEFF;
+$border: #DEDCDA;
+$title: #1f2744;
+$bg-main: #F5F5F5;
 
 
 .main{
-  background: #F5F5F5;
+  background: $bg-main;
+  font-family: 'Poppins', serif;
   h1{
     font-family: 'Rubik', serif;
     font-style: normal;
@@ -14,7 +21,8 @@ $grey: #8E8E8E;
     font-size: 64px;
     line-height: 74px;
     letter-spacing: 0.0025em;
-    color: #1F2744;
+    color: $title;
+    margin: 32px auto 24px;
   }
   h2{
     font-family: 'Rubik', serif;
@@ -24,6 +32,7 @@ $grey: #8E8E8E;
     line-height: 56px;
     letter-spacing: 0.5px;
     color: #054457;
+    margin: 16px 0;
   }
   h3{
     font-family: 'Poppins', serif;
@@ -41,7 +50,8 @@ $grey: #8E8E8E;
     font-size: 24px;
     line-height: 32px;
     letter-spacing: 0.0025em;
-    color: #1F2744;
+    color: $title;
+    margin: 16px 0 8px;
   }
   h5{
     font-family: 'Poppins', serif;
@@ -97,7 +107,7 @@ $grey: #8E8E8E;
   }
   .section-name{
     display: inline-block;
-    background: #F8F9FE;
+    background: $ghost-white;
     justify-content: center;
     align-items: center;
     padding: 12px 24px;
@@ -118,13 +128,6 @@ $grey: #8E8E8E;
     justify-content: space-between;
     margin: 32px 125px 0;
     position: relative;
-    a{
-      &:hover{
-        color: $green;
-        position: relative;
-        bottom: 10px;
-      }
-    }
     ul {
       display: flex;
       justify-content: space-between;
@@ -142,11 +145,28 @@ $grey: #8E8E8E;
       a {
         text-decoration: none;
         color: $grey;
+        align-content: center;
+        text-align: center;
+        text-align-all: center;
+        position: relative;
+        img{
+          visibility: hidden;
+          margin: 0 auto;
+          position: relative;
+          right: 50%;
+          top: 15px;
+        }
+        &:hover{
+          color: $green;
+          position: relative;
+          bottom: 10px;
+          img{
+            visibility: visible;
+          }
+        }
       }
     }
   }
-
-}
   .logo{
     display: flex;
     align-items: center;
@@ -163,7 +183,173 @@ $grey: #8E8E8E;
       margin-right: 8px;
     }
   }
-nav{
-  width: 535px;
-  margin-left: 216px;
+  nav{
+    width: 535px;
+    margin-left: 216px;
   }
+  section, footer{
+    //margin: 0 124px;
+  }
+
+  .section-name{
+    margin-top: 65px;
+  }
+  .title{
+    height: 720px;
+    margin-right: 0;
+    background-image: url(../img/bg-head.png);
+    background-repeat: no-repeat;
+    background-position: 100%;
+    p{
+      margin-bottom: 64px;
+    }
+    .search{
+      input{
+        display: none;
+        &:checked + label{
+          background-color: $bg-white;
+          color: $green;
+        }
+      }
+      label{
+        padding: 12px 32px;
+        background: transparent;
+        font-family: 'Poppins', serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: 0.0025em;
+        color: $lightgrey;
+      }
+    }
+  }
+  .container{
+    margin: 0 124px;
+  }
+  .recommendation{
+    background-color: $bg-white;
+    .section-name{
+      margin-top: 120px;
+    }
+    .recommendation_elems{
+      display: flex;
+      justify-content: space-between;
+      padding: 48px 0 120px;
+    }
+    .recommendation_elems__elem{
+      border: 1px solid $border;
+      padding: 16px;
+      p{
+        color: $lightgrey;
+        margin: 0 0 16px;
+      }
+      .elem_list__price{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        span{
+          color: $green;
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 32px;
+          letter-spacing: 0.0025em;
+        }
+        .room-area{
+          color: $title;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: 0.0025em;
+          padding: 4px 8px;
+          margin-right: 55px;
+          background-color: $bg-main;
+          span{
+            color: $lightgrey;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.0025em;
+          }
+        }
+
+      }
+      .btn__price{
+        border: 1px solid $green;
+        padding: 12px 121px;
+        margin-top: 24px;
+        background: transparent;
+        &:hover{
+          color: #ffffff;
+          background-color: $green;
+          transition: all 1s ease;
+          a{
+            color: #ffffff;
+            transition: all 1s ease;
+          }
+        }
+        a{
+          text-decoration: none;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: 0.0025em;
+          color: $green;
+        }
+      }
+    }
+  }
+  .learn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .learn-link{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0.5px;
+    color: $green;
+    text-decoration: none;
+    img{
+      position: relative;
+      top: 4px;
+    }
+  }
+  .advante{
+    .section-name{
+      margin-top: 80px;
+    }
+    .advante_items{
+      margin-top: 48px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-bottom: 80px;
+      .advante_items__item{
+        max-width: 29%;
+        padding: 20px;
+      }
+    }
+  }
+  .about{
+    background-color: $bg-white;
+  }
+  .about_flex{
+    padding-top: 216px;
+    display: flex;
+    .about_left{
+      width: 50%;
+      .about_left__grade{
+
+      }
+    }
+    .about_right{
+      width: 50%;
+    }
+  }
+}
+
+
