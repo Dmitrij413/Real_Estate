@@ -206,7 +206,7 @@ $bg-main: #F5F5F5;
     .search{
       input{
         display: none;
-        &:checked + label{
+        &:checked + label {
           background-color: $bg-white;
           color: $green;
         }
@@ -221,6 +221,21 @@ $bg-main: #F5F5F5;
         line-height: 32px;
         letter-spacing: 0.0025em;
         color: $lightgrey;
+      }
+      .search_items{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 689px;
+        padding: 32px;
+        background-color: $bg-white;
+        .search_item{
+          h5{
+            font-weight: 400;
+            line-height: 26px;
+            margin: 0 0 8px;
+          }
+        }
       }
     }
   }
@@ -433,6 +448,9 @@ $bg-main: #F5F5F5;
       .testimonials_items__item {
         padding: 24px;
         border: 1px solid $border;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         p{
           color: $title;
         }
