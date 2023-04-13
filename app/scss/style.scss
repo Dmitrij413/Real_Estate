@@ -12,6 +12,7 @@ $subtitle: #054457;
 $bg-main: #F5F5F5;
 
 
+
 .main{
   background: $bg-main;
   font-family: 'Poppins', serif;
@@ -231,6 +232,12 @@ $bg-main: #F5F5F5;
         margin-top: 13px;
         background-color: $bg-white;
         .search_item{
+          input{
+            display: inline-block;
+            width: 25px;
+            //max-width: 40%;
+            //border: none;
+          }
           h5{
             font-weight: 400;
             line-height: 26px;
@@ -246,6 +253,9 @@ $bg-main: #F5F5F5;
             color: $lightgrey;
             position: relative;
             right: 5px;
+            background-image: url(../img/icons/Stroke.svg);
+            background-repeat: no-repeat, repeat;
+            background-position: right 1px top 46%, 0 0;
           }
         }
       }

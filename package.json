@@ -26,6 +26,8 @@
     "sass": "^1.60.0"
   },
   "dependencies": {
-    "mixitup": "^3.3.1"
+    "mixitup": "^3.3.1",
+    "nouislider": "^15.7.0",
+    "range-slider-input": "^2.4.4"
   }
 }

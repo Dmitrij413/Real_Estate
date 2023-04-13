@@ -7,7 +7,11 @@ const browserSync = require('browser-sync').create();
 const clean = require('gulp-clean');
 
 function styles() {
-    return src('app/scss/style.scss')
+    return src([
+      'app/css/base.css',
+      'app/css/nouislider.min.css',
+      'app/scss/style.scss'
+    ])
         .pipe(concat('style.min.css'))
         .pipe(scss({outputStyle: 'compressed'}))
         .pipe(dest('app/css'))
@@ -15,7 +19,10 @@ function styles() {
 }
 
 function scripts() {
-    return src('app/js/main.js')
+    return src([
+      'app/js/main.js',
+      'app/min_js/nouislider.min.js'
+    ])
         .pipe(concat('main.min.js'))
         .pipe(uglify())
         .pipe(dest('app/min_js'))
