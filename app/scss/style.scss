@@ -228,15 +228,19 @@ $bg-main: #F5F5F5;
         justify-content: space-between;
         align-items: center;
         max-width: 689px;
+        max-height: 62px;
         padding: 32px;
         margin-top: 13px;
         background-color: $bg-white;
         .search_item{
           input{
             display: inline-block;
-            width: 25px;
-            //max-width: 40%;
-            //border: none;
+            width: 50px;
+          }
+          #price-range{
+            margin: 0;
+            position: relative;
+            top: 10px;
           }
           h5{
             font-weight: 400;
@@ -256,6 +260,71 @@ $bg-main: #F5F5F5;
             background-image: url(../img/icons/Stroke.svg);
             background-repeat: no-repeat, repeat;
             background-position: right 1px top 46%, 0 0;
+          }
+          .range {
+            padding: 48px 0;
+            background: transparent;
+          }
+          .range__slider {
+            margin-bottom: 24px;
+          }
+          .range__values {
+            display: flex;
+            gap: 24px;
+          }
+          .range__values input {
+            width: 100%;
+            border: none;
+            height: 48px;
+            border-radius: 8px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+            text-align: center;
+            font-size: 18px;
+            color: #fff;
+          }
+          .range__values input:nth-child(1) {
+            background: $green;
+          }
+          .range__values input:nth-child(2) {
+            background: $green;
+          }
+          .range__values input:focus {
+            outline: none;
+          }
+          .noUi-connects{
+            margin-top: 15px;
+          }
+          .noUi-connect {
+            background: $green;
+          }
+          .noUi-target {
+            box-shadow: 0 0 16px #6a00ff;
+            border: none;
+            background: #111;
+          }
+          .noUi-handle {
+            box-shadow: 0 4px 16px rgba(0,0,0,0.24);
+            border: none;
+            border-radius: 50%;
+            background: #111;
+          }
+          .noUi-handle:before,
+          .noUi-handle:after {
+            display: none;
+          }
+          .noUi-handle-lower {
+            background: $green;
+          }
+          .noUi-handle-upper {
+            background: $green;
+          }
+          .noUi-horizontal {
+            height: 10px;
+          }
+          .noUi-horizontal .noUi-handle {
+            width: 20px;
+            height: 20px;
+            right: -12px;
           }
         }
       }
