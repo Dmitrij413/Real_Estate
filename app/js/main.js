@@ -22,7 +22,6 @@ const rangeSliderInit = () => { // создаем функцию инициал�
     }
   )
 
-
   range.noUiSlider.on('update', function (values, handle) { // при изменений положения элементов управления слайдера изменяем соответствующие значения
     inputs[handle].value = parseInt(values[handle]);
     priceRange.textContent = `$ ${inputMin.value} - $ ${inputMax.value}`;
