@@ -234,6 +234,9 @@ $bg-main: #F5F5F5;
           }
           .accordion{
             cursor: pointer;
+            background-image: url(../img/icons/Stroke.svg);
+            background-repeat: no-repeat,repeat;
+            background-position: right 1px top 46%,0 0;
           }
           .panel{
             padding: 0 20px;
@@ -241,6 +244,7 @@ $bg-main: #F5F5F5;
             display: none;
             overflow: hidden;
             position: absolute;
+            transition: max-height 0.2s ease-out;
           }
           #price-range{
             margin: 0;
