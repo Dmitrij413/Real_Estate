@@ -50,7 +50,6 @@ function cleanDist() {
 
 function building() {
     return src([
-        'app/css/base.css',
         'app/css/style.min.css',
         'app/min_js/main.min.js',
         'app/**/*.html'
@@ -62,6 +61,7 @@ exports.styles = styles;
 exports.scripts = scripts;
 exports.watching = watching;
 exports.browsersync = browsersync;
+exports.cleanDist = cleanDist;
 
 exports.build = series(cleanDist, building)
 exports.default = parallel(styles, scripts, browsersync, watching);
