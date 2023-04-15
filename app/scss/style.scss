@@ -148,7 +148,6 @@ $bg-main: #F5F5F5;
         color: $grey;
         align-content: center;
         text-align: center;
-        text-align-all: center;
         position: relative;
         img{
           visibility: hidden;
@@ -188,10 +187,6 @@ $bg-main: #F5F5F5;
     width: 535px;
     margin-left: 216px;
   }
-  section, footer{
-    //margin: 0 124px;
-  }
-
   .section-name{
     margin-top: 65px;
   }
@@ -223,7 +218,7 @@ $bg-main: #F5F5F5;
         letter-spacing: 0.0025em;
         color: $lightgrey;
       }
-      .search_items{
+      .search-items{
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -232,11 +227,11 @@ $bg-main: #F5F5F5;
         padding: 32px;
         margin-top: 13px;
         background-color: $bg-white;
-        .search_price{
+        .search-price{
             position: relative;
             top: 99px;
           }
-        .search_item{
+        .search-item{
           input{
             display: inline-block;
             width: 50px;
@@ -340,19 +335,19 @@ $bg-main: #F5F5F5;
     .section-name{
       margin-top: 120px;
     }
-    .recommendation_elems{
+    .recommendation-elems{
       display: flex;
       justify-content: space-between;
       padding: 48px 0 120px;
     }
-    .recommendation_elems__elem{
+    .recommendation-elems__elem{
       border: 1px solid $border;
       padding: 16px;
       p{
         color: $lightgrey;
         margin: 0 0 16px;
       }
-      .elem_list__price{
+      .elem-list__price{
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -430,13 +425,13 @@ $bg-main: #F5F5F5;
     .section-name{
       margin-top: 80px;
     }
-    .advante_items{
+    .advante-items{
       margin-top: 48px;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
       margin-bottom: 80px;
-      .advante_items__item{
+      .advante-items__item{
         max-width: 29%;
         padding: 20px;
       }
@@ -445,17 +440,17 @@ $bg-main: #F5F5F5;
   .about{
     background-color: $bg-white;
   }
-  .about_flex{
+  .about-flex{
     padding-top: 216px;
     display: flex;
-    .about_left{
+    .about-left{
       width: 52%;
       height: 475px;
       background-image: url(../img/bg-about.png);
       background-repeat: no-repeat;
       background-size: contain;
       position: relative;
-      .about_left__grade{
+      .about-left__grade{
         width: 174px;
         height: 236px;
         box-shadow: 35px 35px 65px rgba(146, 106, 120, 0.16);
@@ -501,7 +496,7 @@ $bg-main: #F5F5F5;
           }
         }
       }
-      .about_left__count{
+      .about-left__count{
         display: flex;
         justify-content: space-around;
         width: 520px;
@@ -509,13 +504,13 @@ $bg-main: #F5F5F5;
         position: absolute;
         bottom: 0;
         right: 0;
-        .about_sale{
+        .about-sale{
           display: flex;
           align-items: center;
         }
       }
     }
-    .about_right{
+    .about-right{
       margin-left: 56px;
       width: 45%;
       .section-name{
@@ -531,14 +526,14 @@ $bg-main: #F5F5F5;
     .section-name{
       margin-top: 120px;
     }
-    .testimonials_items{
+    .testimonials-items{
       margin-top: 48px;
       padding-bottom: 120px;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: 1fr;
       grid-column-gap: 32px;
-      .testimonials_items__item {
+      .testimonials-items__item {
         padding: 24px;
         border: 1px solid $border;
         display: flex;
@@ -547,14 +542,14 @@ $bg-main: #F5F5F5;
         p{
           color: $title;
         }
-        .testimonials_item__author{
+        .testimonials-items__item{
           display: flex;
-          .author_info{
+          .author-info{
             margin-left: 14px;
-            .author_name{
+            .author-name{
               color: #0B2E29;
             }
-            .author_profession{
+            .author-profession{
               color: #767676;
             }
           }
@@ -566,7 +561,7 @@ $bg-main: #F5F5F5;
     padding: 76px 0 100px;
     display: flex;
     justify-content: space-between;
-    .footer_left{
+    .footer-left{
       h5{
         margin: 24px 0 16px;
       }
@@ -587,9 +582,9 @@ $bg-main: #F5F5F5;
         padding: 9px 21px;
       }
     }
-    .footer_center{
+    .footer-center{
       display: flex;
-      .footer_center__service{
+      .footer-center__service{
         margin-right: 80px;
       }
       h5{
@@ -607,7 +602,7 @@ $bg-main: #F5F5F5;
         }
       }
     }
-    .footer_right{
+    .footer-right{
       h5{
         margin: 5px 0 16px;
       }
