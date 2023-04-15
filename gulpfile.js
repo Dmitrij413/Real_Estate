@@ -43,6 +43,8 @@ function browsersync() {
     });
 }
 
+
+
 function cleanDist() {
     return src('dist')
         .pipe(clean())
@@ -52,7 +54,8 @@ function building() {
     return src([
         'app/css/style.min.css',
         'app/min_js/main.min.js',
-        'app/**/*.html'
+        'app/**/*.html',
+        'app/img/**/*'
     ], {base: 'app'})
         .pipe(dest('dist'))
 }

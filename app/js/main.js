@@ -1,3 +1,4 @@
+
 let acc = document.getElementsByClassName("accordion");
 let i;
 
