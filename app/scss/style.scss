@@ -227,14 +227,20 @@ $bg-main: #F5F5F5;
         padding: 32px;
         margin-top: 13px;
         background-color: $bg-white;
-        .search-price{
-            position: relative;
-            top: 99px;
-          }
         .search-item{
           input{
             display: inline-block;
             width: 50px;
+          }
+          .accordion{
+            cursor: pointer;
+          }
+          .panel{
+            padding: 0 20px;
+            background-color: white;
+            display: none;
+            overflow: hidden;
+            position: absolute;
           }
           #price-range{
             margin: 0;
@@ -258,7 +264,7 @@ $bg-main: #F5F5F5;
             background-position: right 1px top 46%, 0 0;
           }
           .range {
-            padding: 48px 0;
+            padding: 48px 8px;
             background: transparent;
             max-width: 180px;
           }
@@ -337,6 +343,7 @@ $bg-main: #F5F5F5;
     }
     .recommendation-elems{
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
       padding: 48px 0 120px;
     }
